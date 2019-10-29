@@ -1,5 +1,6 @@
 # Welcome back!
 
+<<<<<<< HEAD
 import numpy as np
 
 # Print a while loop that prints 1-12
@@ -7,6 +8,10 @@ i = 1
 while i < 13:
 	print(i)
 	i += 1
+=======
+# write a while loop that prints 1-12 
+
+>>>>>>> 9b49aa95c29074698f9a6869d6d0ec9cb808a39c
 
 # Reviewing While loops:
 # Write code to print multiples of 5 from 45 to 90
@@ -23,7 +28,11 @@ while i < 91:
 
 # Create a variable called "myset" and put whatever you want in it:
 
+<<<<<<< HEAD
 myset = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
+=======
+# Create a 2D numpy array of size 3x5 with numbers 1-15:
+>>>>>>> 9b49aa95c29074698f9a6869d6d0ec9cb808a39c
 
 # Create a 2D numpy array of size 3x5 with numbers 1-15:
 
