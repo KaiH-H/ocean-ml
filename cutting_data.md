@@ -32,3 +32,5 @@ Note: BATS latitude range goes from 19.663 degrees North to 39.453 degrees North
 BATS longitude range goes from -59.648999999999994 degrees west (360 -59.648999999999994 degrees east) to 66.211 degrees west (360-66.211 degrees east)
 
 Variables = vertical and horizontal velocities of specific lat/long
+Meausurng physical, chemical, biological properties of the specific locations
+Have to cut down the u and v data points for just the BATS location
