@@ -46,6 +46,6 @@ i = 0
 while i < 4:
 	print("*")
 	star += "*"
-	i += 1
+	i += 1 # Need to find a way to reverse this
 
 
