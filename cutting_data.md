@@ -31,3 +31,4 @@ Instead of running code in a Jupyter notebook, we’re going to write our code i
 Note: BATS latitude range goes from 19.663 degrees North to 39.453 degrees North.
 BATS longitude range goes from -59.648999999999994 degrees west (360 -59.648999999999994 degrees east) to 66.211 degrees west (360-66.211 degrees east)
 
+Variables = vertical and horizontal velocities of specific lat/long
