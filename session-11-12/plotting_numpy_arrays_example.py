@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 
+# plotting the data
 example = np.array([(4.3,-5,0),(2.5,1,-2),(-1.7,3,-.09),(1,1,1)])
 plt.imshow(example,origin='lower')
 
