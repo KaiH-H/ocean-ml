@@ -55,6 +55,11 @@ lat_index_max = max(lat_index)
 lon_index_min = min(lon_index)
 lon_index_max = max(lon_index)
 
+print(lat_index_min)
+print(lat_index_max)
+print(lon_index_min)
+print(lon)
+
 BATSadt = adt[:, lat_index_min:lat_index_max, lon_index_min:lon_index_max]
 
 # creating colorbar scale:
@@ -83,8 +88,19 @@ cbar = plt.colorbar()
 cbar.set_label("Sea Surface Height (m)")
 cbar.ax.set_yticklabels(colorbar_scale)
 
-x1,y1 = [BATS_lon_min][BATS_lat_min]
-plt.plot(x1,y1, color = 'blue')
+x1,y1 = [lon_index_min,lon_index_max],[lat_index_min,lat_index_min] # Bottom horizontal line
+x2,y2 = [lon_index_min,lon_index_min],[lat_index_max,lat_index_min] # Left vertical
+x3,y3 = [lon_index_min,lon_index_max],[lat_index_max,lat_index_max] # Top horizontal
+x4,y4 = [lon_index_max,lon_index_max],[lat_index_max,lat_index_min] # Right vertical
+
+plt.plot(x1,y1,x2,y2,x3,y3,x4,y4, color = 'r', linewidth = 1)
+
+red_line = mlines.Line2D([], [], color='r',
+                          markersize=15, label='BATS region',linewidth = 1)
+plt.legend(handles=[red_line])
+
+plt.xticks(ma.arange(0,1440,200),lon[0::200]) #start:stop:step --> No stop (stop is the end) 
+plt.yticks(ma.arange(0,720,100),lat[0::100]) # becomes start::step
 
 plt.show()
 
