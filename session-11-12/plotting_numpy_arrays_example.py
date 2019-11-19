@@ -33,9 +33,9 @@ plt.xticks(np.arange(3),[7,8,9])
 plt.yticks(np.arange(4),[12,17,22,27])
 
 # adding a legend:
-# blue_line = mlines.Line2D([], [], color='blue',
-#                           markersize=15, label='This line means something!')
-# plt.legend(handles=[blue_line])
+blue_line = mlines.Line2D([], [], color='blue',
+                          markersize=15, label='This line means something!')
+plt.legend(handles=[blue_line])
 
 plt.show()
 
