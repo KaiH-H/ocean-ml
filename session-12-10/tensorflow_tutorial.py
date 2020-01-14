@@ -63,7 +63,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 history = model.fit(train_images, train_labels, epochs=10, 
-                    validation_data=(test_images, test_labels)
+                    validation_data=(test_images, test_labels))
 
 # Graphs the accuracy of the model 
 plt.plot(history.history["accuracy"], label='accuracy')
