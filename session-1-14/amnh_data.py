@@ -16,6 +16,7 @@ with warnings.catch_warnings():
 
 print('ready') 
 
+# Shows images
 def show_batch(image_batch, label_batch):
   plt.figure(figsize=(10,10))
   print(label_batch.shape)
@@ -28,26 +29,28 @@ def show_batch(image_batch, label_batch):
 
 AUTOTUNE = tf.data.experimental.AUTOTUNE
 
-data_dir = '/Users/helenfellow/Documents/Education /cnn_data'
+# Goes to the directory where all the images are
+data_dir = '/Users/brownscholar/Desktop/Internships/ocean-ml/ml_project'
 data_dir = pathlib.Path(data_dir)
 
+# Prints how many images there are
 image_count = len(list(data_dir.glob('*/*.jpg')))
 print(image_count)
 
-
+# Adds labels to each class (image)
 CLASS_NAMES = np.array([item.name for item in data_dir.glob('*') if item.name != ".DS_Store"])
 print(CLASS_NAMES)
 
-seal_1 = list(data_dir.glob('seal_1/*'))
+baby_seal = list(data_dir.glob('baby_seal*')) # Change
 
-
+# Gives all the details of the photos
 image_generator = tf.keras.preprocessing.image.ImageDataGenerator(rescale=1./255)
-BATCH_SIZE = 622
-IMG_HEIGHT = 1024
-IMG_WIDTH = 768
+BATCH_SIZE = 310 # Change
+IMG_HEIGHT = 756 
+IMG_WIDTH = 756
 STEPS_PER_EPOCH = np.ceil(image_count/BATCH_SIZE)
 
-
+# Trains the data with the pictures of the different clsases
 train_data_gen = image_generator.flow_from_directory(directory=str(data_dir),
                                                      batch_size=BATCH_SIZE,
                                                      shuffle=True,
@@ -58,19 +61,20 @@ train_data_gen = image_generator.flow_from_directory(directory=str(data_dir),
 image_batch, label_batch = next(train_data_gen)
 show_batch(image_batch, label_batch)
 
+#Creates convolutional and pooling layers 
 model = models.Sequential()
-model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(1024, 768, 3)))
-model.add(layers.MaxPooling2D((2, 2)))
-model.add(layers.Conv2D(64, (3, 3), activation='relu'))
-model.add(layers.MaxPooling2D((2, 2)))
+model.add(layers.Conv2D(32, (5, 5), activation='relu', input_shape=(IMG_HEIGHT, IMG_WIDTH, 3)))
+model.add(layers.MaxPooling2D((10, 10)))
+model.add(layers.Conv2D(64, (10, 10), activation='relu'))
+model.add(layers.MaxPooling2D((10, 10)))
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 model.add(layers.Flatten())
-model.add(layers.Dense(64, activation='relu'))
-model.add(layers.Dense(10, activation='softmax'))
+model.add(layers.Dense(64, activation='relu')) # 2 layers, first has 64 neurons
+model.add(layers.Dense(2, activation='softmax')) # 2nd has 2 neurons
 
 print(model.summary())
 
-
+# Makes the model and trains it
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
