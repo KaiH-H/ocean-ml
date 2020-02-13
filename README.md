@@ -23,3 +23,16 @@ Thursday November 14 | Finishing Data Visualization |
 Tuesday November 19| Introduction to Machine Learning | [Fun AI Application of the week: Metaphoria](https://metaphor.ga), [Slides about ML](https://docs.google.com/presentation/d/1PoBDwWU-9ubRLOZLUqNlONPtjH3_SLh552pXAvatn_c/edit?usp=sharing)
 Thursday November 21 | Introduction to Organzing Data for ML | [Google Teachable Machine](https://teachablemachine.withgoogle.com), [Slides](https://docs.google.com/presentation/d/17zZ4Xcd3Jup232P5yJsE2InKG-jXf8qk7qdICPO2qt4/edit?usp=sharing)
 Tuesday November 26| Backprop, training, example, classes | [slides](https://docs.google.com/presentation/d/19oal-ekXEvZxfncu_YcImDFUWOG5zqoKmFrc2nlTXg4/edit?usp=sharing)
+Thursday December 5 | Introduction to Computer Vision | [slides](https://docs.google.com/presentation/d/1TL3OnbjvCvT2pGfPdSQ7qcz0JFHaHKo6cWzQkUviks8/edit?usp=sharing) [Computer vision class notes](https://docs.google.com/document/d/1LkZx2HuroXmHIjKmM_x2CFqgK5VuXSeQW8nlBcdG8pM/edit?usp=sharing) [Deep Learning Review (last time)](https://docs.google.com/document/d/1BnurLlL5buptZXF0llknjYSub46THucaekzy6OVf9Tc/edit)
+Tuesday December 10 | Review: Computer Vision, Begin final ML project | [Slides](https://docs.google.com/presentation/d/1KZjJF3bKTdGUoVYhMvRYiEZxbj2L9wZ23tUCOzeqRMo/edit?usp=sharing), [TensorFlow Worksheet](https://docs.google.com/document/d/1m6jI4IqfkQncy_yTT_Yd1MpV2Tg7jJiyIZsneLxGVrs/edit?usp=sharing), [Tutorial](https://www.tensorflow.org/tutorials/images/cnn)
+Thursday December 12 | Review and Final ML project cont'd | [Slides](https://docs.google.com/presentation/d/1k6fijiglXVcDb3zYEKCSmmPFUi_Izr-CHbVnuB3MObg/edit?usp=sharing)
+Tuesday January 14 | Welcome back! Review and final ML project cont'd | [Slides](https://docs.google.com/presentation/d/19vikYfrhbC0rkX4MbjKYy_SGhJ8PebDgSH_SIVYalQo/edit?usp=sharing), [Helpful link for ocean science stuff](https://www.whoi.edu/know-your-ocean/ocean-topics/ocean-circulation/currents-gyres-eddies/)
+Thursday January 16 | Review and final ML project cont'd | 
+Tuesday January 21 | Presentation prep day 1 | 
+Thursday January 23 | Presentation prep day 2 |
+Tuesday January 28 | Career readiness workshop | 
+Thursday January 30 | Mid year presentations |
+Tuesday February 4 | Recap + Introucing data processing unit, Cyclonic/Anticylonic eddies, Quasi-geostrophic (QG) equation | [Slides](https://docs.google.com/presentation/d/1UH27w6dx-nBl7XnIJ9Wh_s2C-zm0qcIrlTRzcx1TXZ4/edit?usp=sharing), [Fortran files class doc](https://docs.google.com/spreadsheets/d/1brDQSDaTjYrFh05NRvooVGOExfQJLUtLLUybsx18Fcs/edit?usp=sharing), [Notes](https://docs.google.com/document/d/160MQVX4yKLjOXmCksRohuliIG1llqV6V1Kv2oTm5nuo/edit?usp=sharing)
+Thursday February 6 | Understanding files involved for data processing unit | 
+Tuesday February 11 | Downloading data, starting making density file | [Slides](https://docs.google.com/presentation/d/1lk1o4YpSVkSHYoPXDAzb4Eggr0svhm7aUax5TjnVQ7w/edit?usp=sharing), [seawater library](https://github.com/bjornaa/seawater), [downloading data](http://marine.copernicus.eu/services-portfolio/access-to-products/)
+Thursday Feburary 13 | Making density file cont'd | 
