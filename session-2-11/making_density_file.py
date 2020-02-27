@@ -22,8 +22,8 @@ first_layer = np.repeat(10, 80*27).reshape(80,27)
 
 second_layer = np.repeat(20, 80*27).reshape(80,27)
 
-for depth_level in pressure[:]:
-	layer = np.repeat(depth_level, 80*27).reshape(80,27) # 2D array
+# for depth_level in pressure[:]:
+# 	layer = np.repeat(depth_level, 80*27).reshape(80,27) # 2D array
 
 for i in range(0,31):
 	pressure_3d[i,:,:] = np.repeat(pressure[i], 80*27).reshape(80,27)
