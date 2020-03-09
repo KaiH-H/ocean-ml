@@ -13,6 +13,7 @@ while mult < 240:
 
 # 3. Use a while loop to find the average of these numbers:
 numbers = [10,42,-2, 900,5,8,39]
+<<<<<<< HEAD
 
 index = 0
 sum_numbers = 0
@@ -30,3 +31,17 @@ while index < length:
 avg = sum_numbers/index
 
 print(avg)
+=======
+print(numbers[1])
+i = 0
+total = 0
+
+while i < len(numbers):
+	total += numbers[i]
+	i+=1
+
+print(total)
+average = total/len(numbers)
+
+print(average)
+>>>>>>> ae2a66d07524f15dcce27fbe52b54d85ec246ec5
