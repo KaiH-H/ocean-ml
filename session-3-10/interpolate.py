@@ -1,3 +1,6 @@
+import numpy as np
+import tricubic
+#import pytricubic as tricubic
 def interp(startgrid):
 	num_depths = 30 # to avoid problems with seafloor depth
 	z_step = 10 
@@ -23,10 +26,10 @@ def interp(startgrid):
 		#start grid is shape lat,lon,depth
 		lat = startgrid.shape[1]
 		lon = startgrid.shape[2]
-		depth = startgrid.shape[0]
+		depth_1 = startgrid.shape[0]
 
 	interp_grid = np.zeros((len(new_depth_index),lat,lon))
-	ip = tricubic.tricubic(list(startgrid),[depth,lat,lon])
+	ip = tricubic.tricubic(list(startgrid),[depth_1,lat,lon])
 
 	for i in range(0,lat):
 		for j in range(0,lon):

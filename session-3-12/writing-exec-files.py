@@ -1,1 +1,78 @@
-# to do
+# Writing to vectorq.exec
+import sys
+file_name = sys.argv[1]
+
+vectorq = open('vectorq.exec','w')
+
+vectorq.write("#!/bin/csh")
+vectorq.write("\n")
+vectorq.write("set dir = ./ss1/")
+vectorq.write("\n")
+vectorq.write("set fileinfo = {$dir}info_pr.dat")
+vectorq.write("\n")
+vectorq.write("set filedh =  {$dir}dh_" + file_name + ".gr")
+vectorq.write("\n")
+vectorq.write("set filest =  {$dir}density_" + file_name + ".gr")
+vectorq.write("\n")
+vectorq.write("set filestm = {$dir}ss1_st0.dat")
+vectorq.write("\n")
+vectorq.write("set filequ =  {$dir}ss1a2qu.gr")
+vectorq.write("\n")
+vectorq.write("set fileqv =  {$dir}ss1a2qv.gr")
+vectorq.write("\n")
+vectorq.write("set fileqdi = {$dir}ss1a2qdi.gr")
+vectorq.write("\n")
+
+vectorq.write("./vectorq.exe << !")
+vectorq.write("\n")
+vectorq.write("'$fileinfo'	#>>>>>Escribe info file info.dat:")
+vectorq.write("\n")
+vectorq.write("'$filedh'	#>>>>>Escribe fichero de altura Dinamica:")
+vectorq.write("\n")
+vectorq.write("'$filest'	#>>>>>Escribe fichero de densidad:")
+vectorq.write("\n")
+vectorq.write("'$filestm'	#>>>>>Escribe fichero de densidad promedio:")
+vectorq.write("\n")
+vectorq.write("'$filequ'	#>>>>>Escribe fichero Qu:")
+vectorq.write("\n")
+vectorq.write("'$fileqv'	#>>>>>Escribe fichero Qv:")
+vectorq.write("\n")
+vectorq.write("'$fileqdi'	#>>>>>Escribe fichero Qdi:")
+vectorq.write("\n")
+vectorq.write("!")
+
+vectorq.close()
+
+
+# Writing to omegainv.exec
+omegainv = open('omegainv.exec', 'w')
+
+omegainv.write("#!/bin/csh")
+omegainv.write("\n")
+omegainv.write("set dir = /Users/brownscholar/Desktop/Internships/ss1/")
+omegainv.write("\n")
+omegainv.write("set fileinfo = ./ss1/info_pr.dat")
+omegainv.write("\n")
+omegainv.write("set filestm = {$dir}ss1_st0.dat")
+omegainv.write("\n")
+omegainv.write("set fileqdi = {$dir}ss1a2qdi.gr")
+omegainv.write("\n")
+omegainv.write("set filew =   {$dir}ss1a2ww.gr")
+omegainv.write("\n")
+
+omegainv.write("./omegainv.exe << !")
+omegainv.write("\n")
+omegainv.write("'$fileinfo' 	#>>>>>Escribe info file info.dat:")
+omegainv.write("\n")
+omegainv.write("'$fileqdi' 	#>>>>>Escribe fichero de Div Q:")
+omegainv.write("\n")
+omegainv.write("'$filestm'   	#>>>>>Escribe fichero de densidad promedio:")
+omegainv.write("\n")
+omegainv.write("'ominput.dat'  #>>>>>Escribe fichero parametros (ominput.dat):")
+omegainv.write("\n")
+omegainv.write("'$filew'	#>>>>>Escribe fichero Salida W:")
+omegainv.write("\n")
+omegainv.write("!")
+
+omegainv.close()
+

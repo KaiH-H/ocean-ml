@@ -128,7 +128,7 @@ C .... Fill in the matriz outputs with the absent data value
 C.....Reading Geopotential...
 	OPEN(UNIT=1,FILE=filedh,STATUS='OLD')
 
-	READ(1,*) nl
+	READ(1,*) nl 
 	READ(1,*) nf,nc
 	DO k=1,nl
 	  DO J=1,nf
