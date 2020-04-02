@@ -1,0 +1,52 @@
+Domain and network data file; programs that access it:
+ ANALIST_SC , CONSTRUC , GEOPSUM , DERIVAT , VECTORQ , PV , GENERATOR .
+
+XLON1, XLAT1   ,  coordinates of the lower left corner of the domain (degrees)
+ 19.625000, 293.875
+
+ALF0           ,  orientation: the area can be delimited by meridians and
+  0.           ,  paral.lels (ALF0=0.) or incline it an angle  ALF0 (degrees)
+
+ NL , NF , NC  ,  number of levels, rows and columns  
+ 30 , 27 , 80 
+
+ XARM , YARM   ,  cell size (in degrees if ALF0 = 0., if not in KM)
+ 0.03, 0.025
+
+ Z0  , ZINT    ,  upper level and interval between levels
+ 10 ,  10     
+
+ NA            ,  root name of the data we are using (a3)
+ss1
+
+------------------------------------------------------------------------------
+
+ATTENTION !!!:  of the selected domain, at the time of the graphical representation
+              you will lose two rows and two columns per band (the most)
+              exterior): 4 rows and 4 columns in total.
+
+              This must be taken into account by selecting a wider domain
+              of what is really needed ...
+
+------------------------------------------------------------------------------
+
+Reading instructions:
+      open(unit=99,file='info.dat',status='old')
+      read(99,3)
+      read(99,3)
+      read(99,*) XLON1,XLAT1
+      read(99,3)
+      read(99,*) ALF0
+      read(99,3) 
+      read(99,*) NL,NF,NC
+      read(99,3)
+      read(99,*) XARM,YARM
+      read(99,3)
+      read(99,*) Z0,ZINT
+      read(99,3)
+      read(99,5) NA
+    3 format(1x/1x)
+    5 format(a3)
+      close(unit=99)
+
+------------------------------------------------------------------------------  
