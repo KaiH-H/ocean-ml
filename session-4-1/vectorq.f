@@ -14,11 +14,7 @@ C     of NFxNCxNL grid points, and needs geopotential and sg-t analyses
 C     in the standard 3D format (*ST.gr and (*DH.gr or *DT.gr)).
 C
 C     In a first step, the mean density of each level is computed (from
-<<<<<<< HEAD
-C     the ST 3D grid) and written in an output file (ST0.DAT). This file
-=======
 C     the ST 3D grid) and witten in an output file (ST0.DAT). This file
->>>>>>> 3ea6b141428d75ef84a8447b9d02e3430e6e9b3c
 C     will be required to invert the omega equation (using OMEGAINV.F).
 C     Second, the Q-vector components are derived from the ST and DH (or
 C     DT) 3D grids, and optionally written as separate files. Finally,
@@ -79,11 +75,7 @@ C .... Reading fichero de informaci�n
         OPEN(unit=99,file=filedat,status='old')
 	read(99,3)
       read(99,3)
-<<<<<<< HEAD
-      read(99,*) XLON1,xlat1
-=======
       read(99,*) xlon1,xlat1
->>>>>>> 3ea6b141428d75ef84a8447b9d02e3430e6e9b3c
       WRITE(*,'(">>>>>Lon0,lat0: ",f6.3,x,f6.3)') xlon1,xlat1
       read(99,3)
       read(99,*) alf0

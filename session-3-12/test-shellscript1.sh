@@ -1,12 +1,12 @@
 #!/bin/bash
 
 cd 
-cd Desktop/Internships/ocean-ml/session-3-12/
+cd Desktop/session-4-1/
 echo "Start"
-cat date_list.txt | while read line
-do 
-	python write_exec_files.py $line
+for LINE in date_list.txt
+	do 
+	python write_exec_files.py $LINE
 	chmod +x *
 	./vectorq.exec
 	./omegainv.exec
-done
+	done
