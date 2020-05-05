@@ -9,6 +9,7 @@ omega = Dataset(r'/Users/brownscholar/Desktop/fortran_files/omega.nc')
 w = omega['w']
 lat = omega['latitude']
 depth = omega['depth']
+longitude = omega['lon']
 
 print(w.shape)
 
@@ -29,11 +30,11 @@ array1_flip = np.swapaxes(array1,0,1)
 array2_flip = np.swapaxes(array2,0,1)
 array3_flip = np.swapaxes(array3,0,1)
 
-ax[0].pcolormesh(array1_flip,cmap=RedBlue)
+ax[0].pcolormesh(array1_flip,cmap=RedBlue, vmax = 10, vmin = -10)
 ax[0].set_title("Depth = " + str(depth[0]))
-ax[1].pcolormesh(array2_flip,cmap=RedBlue)
+ax[1].pcolormesh(array2_flip,cmap=RedBlue, vmax = 10, vmin = -10)
 ax[1].set_title("Depth = " + str(depth[1]))
-ax[2].pcolormesh(array3_flip,cmap=RedBlue)
+ax[2].pcolormesh(array3_flip,cmap=RedBlue, vmax = 10, vmin = -10)
 ax[2].set_title("Depth = " + str(depth[2]))
 
 fig.suptitle("Hovmoller Diagram at Latitude " + str(lat[0]))
