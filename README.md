@@ -53,3 +53,4 @@ April 7 | converting our data to netcdf file, starting plots | [Slides](https://
 April 21 | Starting Hovmoller Diagram :-) | [Slides](https://docs.google.com/presentation/d/1qlRekwLJRDLANCHkwlwkWUt_PHbHwnKl3ajqFseu9k4/edit?usp=sharing)
 April 28 | Detailing our Hovmoller Diagrams | [Slides](https://docs.google.com/presentation/d/1KJFl8EMAL5ievwtm5O2WJ4anK_s2k4e0lZR4ZWVLbBo/edit?usp=sharing)
 May 5th | Detailing cont'd | [Slides](https://docs.google.com/presentation/d/1sy_gcSZ0r4iLKZZFCdr5PAhFZRS5WmyErb0e3IkUjAs/edit?usp=sharing)
+May 12th | finalizing hovmoller diagrams | [slides](https://docs.google.com/presentation/d/1avnEkBoPKF-bd1K1_xU7zTmONXFBiyqbL0y_iRKhhMI/edit?usp=sharing)
